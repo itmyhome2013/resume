@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>响应式简历模板</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+  <style>
+
+	/* 定义辅助CSS来美化简历头部 */
+	body{
+	  font-family: 'microsoft yahei',Arial,sans-serif;
+	}
+
+	.cvheader{
+	  border-bottom: 1px solid #DFDFDF;
+	  padding-top:30px;
+	  padding-bottom:20px;
+	}
+
+	.cvheader h1{
+	  margin:0;
+	}
+
+	.address{
+	  background: #efb73e;
+	  color: #fff;
+	  padding: 10px 0;
+	}
+
+	/* 定义辅助CSS来美化简历主体 */
+
+	.cvbody{
+	  padding-top: 50px; 
+	}
+
+	.cbox{
+	  margin-bottom: 30px;
+	  color: #FFF;
+	  padding: 50px;
+	}
+
+	/* 定义cbox颜色 */
+	.green{
+	  background: #2ecc71;
+	}
+
+	.orange{
+	  background: orange;
+	}
+
+	.red{
+	  background: #dd4814;
+	}
+
+	.bbox{
+	  border: 1px solid #DFDFDF;
+	  border-radius: 5px;
+	  margin-bottom:30px;
+	  padding: 50px;
+	}
+
+	.footer{
+	  margin: 30px 0 30px;
+	  padding: 50px;
+	  background: #CCC;
+	  color: #FFF;
+	}
+</style>
+</head>
+<body>
+  <!-- 定义简历的头部 //-->
+
+<div class="container">
+  <div class="row cvheader">
+    <div class="col-lg-7 col-md-7 col-xs-12">
+      <!--  添加颜色//-->
+      <h1 class="text-primary">Mr Hu</h1>
+      </br>
+      <!--  添加图标 //-->
+      <p><span class="glyphicon glyphicon-paperclip"></span> JAVA开发工程师</p>
+    </div>
+    
+    <div class="col-lg-3 col-md-3 col-xs-12">
+      <div class="row">
+        
+        <div class="col-lg-4 col-md-4 col-xs-4">
+          <p id="contact" class="address text-center">联系</p>
+        </div>
+        
+        <div class="col-lg-8 col-md-8 col-xs-8">
+          <p><span class="glyphicon glyphicon-envelope"></span>  itmyhome@163.com</p>
+          <p><span class="glyphicon glyphicon-earphone"></span> 186****4345</p>
+          <p><span class="glyphicon glyphicon-road"></span> 北京市海淀区</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="col-lg-2 col-md-2 col-xs-12">
+      <p>
+        <!-- 这里定义图片为响应式，并且添加圆角效果，以便保证图片在不同设备上都可以完美显示 //-->
+        <img data-toggle="tooltip" data-placement="left" id="avatar" title="我是Mr Hu" class="img-responsive img-rounded" src="http://itmyhome.com/images/index/flower.jpg" alt="">
+       </p>
+    </div>
+  </div>
+</div>
+
+<!-- 定义简历的主体部分 //-->
+
+<div class="container">
+  <div class="row cvbody">
+    
+    <!-- 这里定义两个区域，布局定义如下：//-->
+    
+    <div class="col-lg-6 col-md-6 col-xs-12">
+    
+      <div class="row">
+        <div class="cbox green">
+          <h4>个人介绍</h4>
+          <p>
+           	 为人聪明好学，在校期间多次拿国家奖学金，拿到手软，大学担任学生会主席一职，创办跆拳道和围棋社团。</br>
+           	 毕业之后先后在Google，阿里等大公司实习、工作。在工作岗位上尽职尽责，呕心沥血，受到员工和老板一致好评,
+           	 多次被评为优秀员工。
+          </p>
+        </div>
+        <div class="cbox red">
+          <h4>个人技能</h4>
+          <p>
+            <!-- 这里使用Bootstrap3的组件添加技能 //-->
+            
+            JS/Javascript/jQuery
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width:80%"></div>
+            </div>
+            
+            Java/J2EE
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary" style="width:90%"></div>
+            </div>
+                              数据库/Oracle/DB2
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" style="width:80%"></div>
+            </div>
+            
+            SSH
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" style="width:70%"></div>
+            </div>
+          </p>
+        </div>
+        <div class="cbox orange">
+          <h4>其他语言技能</h4>
+          <p>
+			<canvas id="en" width="150" height="150" class="pull-left"></canvas>
+			<canvas id="zh" width="150" height="150" class="pull-right"></canvas>
+			<p class="clearfix"></p>
+          </p>
+        </div>
+      </div>
+    
+    </div>
+    
+    <!-- 为了清楚的分割两个区域，这里我们添加了一个空白区域，或者也可以在CSS中定义Margin实现//-->
+    <div class="col-lg-1 col-md-1 col-xs-12"></div>
+    
+    <div class="col-lg-5 col-md-5 col-xs-12">
+    
+      <div class="row">
+        <div class="bbox">
+          <h4>教育背景</h4>
+            <p>
+         	 2006.9 – 2010.6 北京大学 计算机硕士学位</br>
+			 2002.9 – 2006.7 清华附中</br>
+			 1997.9 – 2002.7 人大附小
+            </p>
+        </div>
+        <div class="bbox">
+          <h4>工作经验</h4>
+          	<p>
+          	 2013.8 – 至今 阿里巴巴 产品总监</br>
+         	 2012.6 – 2013.8 百度 部门经理</br>
+			 2010.6 – 2012.6 微软公司 系统工程师</br>
+			 2010.1 – 2010.6 Google公司实习
+            </p>
+        </div>
+        <div class="bbox">
+          <h4>个人爱好</h4>
+          <p>
+            <span class="glyphicon glyphicon-tree-deciduous"></span> 骑马
+            <span class="glyphicon glyphicon-plane"></span> 旅游
+            <p><span class="glyphicon glyphicon-cutlery"></span> 美食</p>
+            <p><span class="glyphicon glyphicon-music"></span> 音乐</p>
+          </p>
+        </div>
+      </div>
+    
+    </div>
+    
+    
+  </div>
+</div>
+
+<!-- 定义简历页底 //-->
+<div class="container">
+  <div class="row"><div class="footer text-center">个人独立博客 -- <a href="http://itmyhome.com" target="_blank">麦田技术博客</a></br></br>以上简历模板仅供参考  - 源码下载<a href="http://itmyhome.com"> Github</a></div></div>
+</div>
+
+<!-- 引入jQuery类库和Bootstrap3的Javascript类库 //-->
+<script type='text/javascript' src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+/*Javascript源代码*/
+
+$(function(){
+  $('#contact').popover({placement:'bottom', container: 'body', html:true, content:'<p>QQ: 521 521 521</p><p>微博：weibo.com</p><p>微信：weixin.com</p>'});
+  $('#avatar').tooltip({'placement':'bottom'});
+  
+	$.getScript('http://www.chartjs.org/assets/Chart.js',function(){
+	  
+	  var zhdata = [{
+			label: 'Ruby',
+			value: 90,
+			highlight: "#FFC870",
+			color: "#F7464A"
+		}, {
+			value: 10,
+			color: "#EEEEEE"
+		}
+		]
+
+		var zhoptions = {
+			animation: true,
+			segmentShowStroke : false
+		};
+
+		var c = $('#zh');
+		var ct = c.get(0).getContext('2d');
+		
+		var zhChart = new Chart(ct).Doughnut(zhdata, zhoptions);
+
+	
+	  var endata = [{
+			label: 'Python',
+			value: 60,
+			highlight: "#5AD3D1",
+			color: "#4D5360"
+		}, {
+			label: 'Linux',
+       		value: 20,
+        	color: "#EEEEEE"
+		}, {
+			label: 'Git',
+      		value: 20,
+         	color: "#BF3EFF"
+ 		}
+		]
+
+		var enoptions = {
+			animation: true,
+			segmentShowStroke : false
+		};
+
+		var c = $('#en');
+		var ct = c.get(0).getContext('2d');
+		
+		var enchart = new Chart(ct).Doughnut(endata, enoptions);
+	});
+
+});
+
+</script>
+</body>
+</html>
