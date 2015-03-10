@@ -2,4 +2,4 @@
 
 预览：http://itmyhome.com/resume/
 
-可将该简历挂到自己的Github上，以便提前让HR对你有个好印象 ^_^
+可将该简历挂到自己的Github上，以便提升自己的逼格 ^_^
